@@ -60,10 +60,3 @@ install-supervisor() {
 }
 install-supervisor
 
-install-nibble-auth-service() {
-  echo "Installing nibble's authentication service..."
-  # Required for app.nibble.ai to work properly.
-  # https://github.com/nibbleai/auth-service
-  $ANACONDA_DIR/bin/pip install https://github.com/nibbleai/auth-service/archive/0.1.zip
-}
-install-nibble-auth-service
