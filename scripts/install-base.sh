@@ -10,7 +10,7 @@ apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 
 install-anaconda() {
   echo "Downloading Anaconda..."
-  wget -q https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh -O /tmp/anaconda.sh
+  wget -q https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh -O /tmp/anaconda.sh
   bash /tmp/anaconda.sh -b -f -p $ANACONDA_DIR
   chmod -R 777 $ANACONDA_DIR
   echo "PATH=\"${ANACONDA_DIR}/bin:$PATH\"" > /etc/environment
