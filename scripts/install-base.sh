@@ -19,7 +19,13 @@ install-anaconda() {
 }
 install-anaconda
 
+upgrade-pip() {
+  echo "Upgrading pip..."
+  $ANACONDA_DIR/bin/pip install -U pip
+}
+
 install-aws-cli() {
+  $ANACONDA_DIR/bin/pip install -U boto3
   $ANACONDA_DIR/bin/pip install awscli
 }
 install-aws-cli
