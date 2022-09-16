@@ -35,7 +35,7 @@ install-code-server() {
   wget -q https://github.com/cdr/code-server/releases/download/v3.4.1/code-server-3.4.1-linux-amd64.tar.gz -O /tmp/code-server.tar.gz
   mkdir /usr/lib/code-server
   tar xzf /tmp/code-server.tar.gz -C /usr/lib/code-server --strip-components 1
-  ln -s /usr/lib/code-server/code-server /usr/local/bin/code-server
+  ln -s /usr/lib/code-server/bin/code-server /usr/local/bin/code-server
   rm -rf /tmp/code*
 }
 install-code-server
