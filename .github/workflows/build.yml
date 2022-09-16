@@ -1,9 +1,6 @@
 name: Build Machine Images
 
-on:
-  push:
-    branches:
-      - master
+on: workflow_dispatch
 
 jobs:
   build-cpu:
